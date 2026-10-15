@@ -1,0 +1,19 @@
+/*
+  Overpass query for the Milestone 1 map box (south, west, north, east).
+  Paste into https://overpass-turbo.eu, run it, then Export > Data > "download as raw OSM data"
+  (or GeoJSON). Save the result into data/raw/ (that folder is git-ignored because it is large).
+  The area is too big for openstreetmap.org's direct export button, which is why we use Overpass.
+*/
+[out:json][timeout:180];
+(
+  way["highway"](30.0037,31.4803,30.0399,31.5293);
+  way["building"](30.0037,31.4803,30.0399,31.5293);
+  relation["building"](30.0037,31.4803,30.0399,31.5293);
+  way["landuse"](30.0037,31.4803,30.0399,31.5293);
+  way["leisure"](30.0037,31.4803,30.0399,31.5293);
+  way["natural"](30.0037,31.4803,30.0399,31.5293);
+  way["barrier"="wall"](30.0037,31.4803,30.0399,31.5293);
+);
+out body;
+>;
+out skel qt;

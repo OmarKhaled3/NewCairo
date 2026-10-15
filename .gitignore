@@ -1,0 +1,13 @@
+# Godot 4 cache (regenerated automatically)
+.godot/
+*.tmp
+
+# Raw map downloads are large; keep them local
+data/raw/
+
+# macOS
+.DS_Store
+
+# Exports / builds
+build/
+export/

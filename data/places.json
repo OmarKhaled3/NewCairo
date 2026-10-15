@@ -1,0 +1,46 @@
+{
+  "note": "Real-world pins for Milestone 1. Coordinates are WGS84 decimal degrees, converted from Google Maps DMS pins Omar supplied on 2026-10-15.",
+  "map_bbox": {
+    "south": 30.0037,
+    "west": 31.4803,
+    "north": 30.0399,
+    "east": 31.5293,
+    "note": "Box around all three pins plus about 500 m margin. Roughly 4.0 km north-south by 4.7 km east-west."
+  },
+  "map_origin": {
+    "lat": 30.0218,
+    "lon": 31.5048,
+    "note": "Center of map_bbox. Godot world (0,0,0) sits here. +X = east, -Z = north, +Y = up, 1 unit = 1 meter."
+  },
+  "places": [
+    {
+      "id": "home",
+      "name": "Home (Zizinia)",
+      "role": "spawn",
+      "lat": 30.008667,
+      "lon": 31.494417,
+      "dms": "30°00'31.2\"N 31°29'39.9\"E"
+    },
+    {
+      "id": "gym",
+      "name": "DFN Gym (near Mivida)",
+      "role": "destination",
+      "lat": 30.009778,
+      "lon": 31.524306,
+      "dms": "30°00'35.2\"N 31°31'27.5\"E"
+    },
+    {
+      "id": "class",
+      "name": "The Mind Space (near Waterway 2)",
+      "role": "destination",
+      "lat": 30.034889,
+      "lon": 31.485278,
+      "dms": "30°02'05.6\"N 31°29'07.0\"E"
+    }
+  ],
+  "straight_line_distances_m": {
+    "home_to_gym": 2884,
+    "home_to_class": 3049,
+    "gym_to_class": 4687
+  }
+}
